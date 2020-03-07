@@ -7,8 +7,9 @@
     <link rel="stylesheet" href="Newpage.css">
 </head>
 <body>
+
     <div class="container">
-        <nav class="navbar">
+        <nav id="testnav" class="navbar">
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About Me</a></li>
@@ -17,25 +18,54 @@
               </ul>
             </nav>
         <section id="home">
-              <h1>Talha Amjad</h1>
-          <p class="lead">A Computer Science student at Mcmaster University</p>
+            <div class="DLbt">
+                <button onclick="myFunction()">Toggle dark mode
+                </button>
+        </div>
+            <div class="nameh">
+                <h1>Talha Amjad
+                  <span class="txt-type" data-wait="3000" data-words='["Designer", "Creator"]'></span> <!-- remove maybe -->
+                </h1>
+                <h2>
+                    <span class="txt-type2" data-wait="3000" data-words2='["Welcome to my Portfolio", "I am a Computer Science Student"]'></span>
+                </h2>
+              </div>
         </section>
         <section id="about">
             <div class="boxesA">
                 <div class="boxA">
-                    <div id="mySidenav" class="sidenav">
-                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                      </div>
-                      <span onclick="openNav()"><h1>Education</h1></span>
-                </div>
-                <div class="boxA">
                     <div id="mySidenav5" class="sidenav">
                         <a href="javascript:void(0)" class="closebtn" onclick="closeNav5()">&times;</a>
-                        <a href="#">High School</a>
-                      </div>
-                      <span onclick="openNav5()"><h1>Work Experience</h1></span>
+        
+                        <div class="grid-container">
+                            <h1>Mcmaster University</h1>
+                            <div class="grid-item">
+                                <p>Currently a first year computer science student</p>
+                                <p></p>
+                            </div>
+                            <h1>Sir Allan Macnab Secondary School</h1>
+                            <div class="grid-item">
+                                <p>Graduated with a 94% average</p>
+                                <p></p>
+                            </div>
+                        </div>
+                        </div>
+                      <span onclick="openNav5()"><h1>Education</h1></span>
                 </div>
-                
+                <div class="boxA">
+                    <div id="mySidenav6" class="sidenav">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav6()">&times;</a>
+                        <div class="grid-container">
+                            <h1>Currently have no work Experience</h1>
+                            <div class="grid-item">
+                            </div>
+                            <h1>Volunteering Experience</h1>
+                            <div class="grid-item">
+                            </div>
+                        </div>
+                      </div>
+                      <span onclick="openNav6()"><h1>Work Experience</h1></span>
+                    </div>
             </div>
             <div class="boxesB">
                 <div class="boxB">
@@ -44,57 +74,18 @@
                     </div>
                 </div>
             </div>
-    
-    <!--         <h1>About Me</h1>
-    <div class="resume" id="resume">
-    <div class="row">
-    <div class="col-md-6">
-            <h3 class="text-center">Education</h3>
-            <ul class="timeline">
-            <li>
-                <h4><span>2019 : </span> Bachelor of Applied Science - Computer Science</h4> 
-                <b>Institute</b> : McMaster University <br>
-                <b>Session</b> : Sept 2019 - April 2024 <br>
-                </p>
-            </li>
-            
-            <li>
-                <h4><span>2014 : </span> Ontario Secondary School Diploma</h4> 
-                <b>Institute</b> : Craig Kielburger Secondary School <br>
-                <b>Session</b> : Sept 2014 - June 2019 <br>
-                </p>
-            </li>
-            </ul>
-        </div>
-    <div class="col-md-6">
-    <h3 class="text-center">Work Experience</h3>
-    <ul class="timeline">
-        <li>
-            <h4><span>2018 - </span> Front End Developer</h4> 
-            <p>
-                Write some stuff about working at whatever work place you worked at and add it over here to talk about because this is the description.<br>
-            <b>Company Name</b> - xyz company Pvt Ltd <br>
-            <b>Duration</b> : 1 yr 2017 - 2018 <br>
-            <b>Location</b> : Canada <br>
-            </p>
-        </li>
-        
-        <li>
-            <h4><span>2018 - </span> Job 2 That I did</h4> 
-            <p>
-                Write some stuff about working at whatever work place you worked at and add it over here to talk about because this is the description.<br>
-            <b>Company Name</b> - xyz company Pvt Ltd <br>
-            <b>Duration</b> : 1 yr 2017 - 2018 <br>
-            <b>Location</b> : Canada <br>
-            </p>
-        </li>
-    </ul>
-    </div>
-    </div>
-    <button type="button" class="btn btn-primary" onclick="window.location.href='Resume.pdf'"><i class="fa fa-download" ></i>Full Resume</button>
-    </div>
-    </div>
-     -->
+            <div class="boxesC">
+                <div class="boxC">
+                    <p>Full Resume</p>
+                </div>
+                <div class="boxC">
+                    <p>POGGERS</p>
+                </div>
+                <div class="boxC">
+                    <p>DAB</p>
+                </div>
+
+            </div>
     
         </section>
         <section id="Projects">
