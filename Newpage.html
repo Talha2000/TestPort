@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Newpage.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#Projects">Projects</a></li>
+                <li><a href="#Contact">Contact Me</a></li>
+              </ul>
+            </nav>
+        <section id="home">
+              <h1>Talha Amjad</h1>
+          <p class="lead">A Computer Science student at Mcmaster University</p>
+        </section>
+        <section id="about">
+            <div class="boxesA">
+                <div class="boxA">
+                    <div id="mySidenav" class="sidenav">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                      </div>
+                      <span onclick="openNav()"><h1>Education</h1></span>
+                </div>
+                <div class="boxA">
+                    <div id="mySidenav5" class="sidenav">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav5()">&times;</a>
+                        <a href="#">High School</a>
+                      </div>
+                      <span onclick="openNav5()"><h1>Work Experience</h1></span>
+                </div>
+                
+            </div>
+            <div class="boxesB">
+                <div class="boxB">
+                    <div class="filtered">
+                        <img src="selfy.jpg">
+                    </div>
+                </div>
+            </div>
+    
+    <!--         <h1>About Me</h1>
+    <div class="resume" id="resume">
+    <div class="row">
+    <div class="col-md-6">
+            <h3 class="text-center">Education</h3>
+            <ul class="timeline">
+            <li>
+                <h4><span>2019 : </span> Bachelor of Applied Science - Computer Science</h4> 
+                <b>Institute</b> : McMaster University <br>
+                <b>Session</b> : Sept 2019 - April 2024 <br>
+                </p>
+            </li>
+            
+            <li>
+                <h4><span>2014 : </span> Ontario Secondary School Diploma</h4> 
+                <b>Institute</b> : Craig Kielburger Secondary School <br>
+                <b>Session</b> : Sept 2014 - June 2019 <br>
+                </p>
+            </li>
+            </ul>
+        </div>
+    <div class="col-md-6">
+    <h3 class="text-center">Work Experience</h3>
+    <ul class="timeline">
+        <li>
+            <h4><span>2018 - </span> Front End Developer</h4> 
+            <p>
+                Write some stuff about working at whatever work place you worked at and add it over here to talk about because this is the description.<br>
+            <b>Company Name</b> - xyz company Pvt Ltd <br>
+            <b>Duration</b> : 1 yr 2017 - 2018 <br>
+            <b>Location</b> : Canada <br>
+            </p>
+        </li>
+        
+        <li>
+            <h4><span>2018 - </span> Job 2 That I did</h4> 
+            <p>
+                Write some stuff about working at whatever work place you worked at and add it over here to talk about because this is the description.<br>
+            <b>Company Name</b> - xyz company Pvt Ltd <br>
+            <b>Duration</b> : 1 yr 2017 - 2018 <br>
+            <b>Location</b> : Canada <br>
+            </p>
+        </li>
+    </ul>
+    </div>
+    </div>
+    <button type="button" class="btn btn-primary" onclick="window.location.href='Resume.pdf'"><i class="fa fa-download" ></i>Full Resume</button>
+    </div>
+    </div>
+     -->
+    
+        </section>
+        <section id="Projects">
+            <h1>Projects</h1>
+            <div class="boxes">
+            <div class="box">
+                    <h3>Python</h3>
+                    <div id="mySidenav" class="sidenav">
+                      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    </div>
+                    <span onclick="openNav()"><img src="PythonLogo.png"</span>
+                </div>
+
+        <div class="box">
+          <h3>Bash</h3>
+          <div id="mySidenav2" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav2()">&times;</a>
+          </div>
+          <span onclick="openNav2()"><img src="Bash.png"</span>
+      </div>
+      <div class="box">
+        <h3>Haskell</h3>    
+        <div id="mySidenav3" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav3()">&times;</a>
+          <a href="#">Haskell</a>
+        </div>
+        <span onclick="openNav3()"><img src="Haskell.png"</span>
+    </div>
+    <div class="box">
+      <h3>javascript</h3>
+      <div id="mySidenav4" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav4()">&times;</a>
+        <a href="#">Java</a>
+      </div>
+      <span onclick="openNav4()"><img src="JavaScript-logo.png"</span>
+    </div>
+    </section>
+    <section id="Contact">
+        <h1>Contact me!</h1>
+            <div class = "w">
+            <div class="contact-form">
+              <div class="input-fields">
+                <input type="text" class="input" placeholder="Name">
+                <input type="text" class="input" placeholder="Email Address">
+                <input type="text" class="input" placeholder="Phone Number">
+                <input type="text" class="input" placeholder="Subject">
+              </div>
+              <div class="msg">
+                <textarea placeholder="Message"></textarea>
+                <div class="button">Send</div>
+              </div>
+            </div>
+          </div>
+        </section>
+<script src="main.js"></script>
+</body>
+</html>

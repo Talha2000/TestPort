@@ -1,0 +1,334 @@
+:root {
+    --primary: #ddd;
+    --dark: #333;
+    --light: #fff;
+    --shadow: 0 1px 1000px rgba(104, 104, 104, 0.8);
+    }   
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgb(0, 0, 0);
+    color: #fff;
+    height: 100vh;
+    line-height: 1.6;
+    overflow: hidden;
+  }
+  
+  .container {
+    width: 100%;
+    height: 100%;
+    /* CSS Smooth Scroll */
+    overflow-y: scroll; 
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+  }
+  
+  .lead {
+    font-size: 2rem;
+  }
+
+
+
+  /* navbar stuff */
+  
+.navbar {
+    position: absolute;
+    justify-content: center;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    width: 100%;
+    height: 60px;
+    background: rgba(0, 0, 0, 0.7);
+  }
+  
+.navbar ul {
+    margin-top: 10px;
+    background-color: var(--shadow);
+    display: grid;
+    grid-gap: 20px;
+    padding: 0;
+    list-style: none;
+    grid-template-columns: auto auto auto auto;
+  }
+    
+.navbar a {
+    border-style: solid;
+    background-color: black;
+    text-decoration: none;
+    padding: 0.8rem;
+    text-align: center;
+    color: var(--light);
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    box-shadow: var(--shadow);
+  }
+    
+.navbar a:hover {
+      background: black;
+      color: red;
+
+  }
+  
+.navbar ul li a:hover {
+    color: syblue;
+  }
+  
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 105vh;
+   
+    /* Scroll Snap */
+    scroll-snap-align: center;
+  }
+  
+  section h1 {
+    font-size: 3rem;
+  }
+  
+  /* Section Images can add images here and change opacity and etc*/
+  section#home {
+    background: no-repeat center center/cover;;
+  }
+
+  #home h1{
+    color: red;
+    padding: 10px;
+    border-style: solid;
+    border-left: white;
+    border-right: white;
+    border-color: white;
+}
+  
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+/*.column {
+    float: left;
+    width: auto;
+    padding: 30px;
+    border-style: solid;
+    
+  }*/
+  
+  /* Clear floats after image containers */
+/*  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }*/
+section#about {
+} 
+
+  /* resume part in about */
+  /*.resume */
+
+.boxesA {
+    float: left;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: auto;
+    margin-right: 750px;
+}
+
+.boxesB {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: auto;
+    margin-left: 700px;
+    margin-top: -300px;
+}
+
+.filtered {
+    border-radius: 50%;
+    background: rgba(190, 26, 4, 0.973);
+    position: relative;
+ }
+ .filtered img {
+   -webkit-filter: grayscale(100%);
+   filter: grayscale(100%);
+   opacity: 0.5;
+ }
+ .filtered:hover {
+    border-radius: 50%;
+    background: rgba(133, 118, 116, 0.973);
+    position: relative;
+ }
+.filtered img {
+    display: block;
+    border-radius: 50%;
+    max-width: 100%;
+ }
+.boxB {
+    margin: 10px 10px;
+    text-align: center;
+    padding: 1.5rem 2rem;
+}
+
+.boxA {
+    border-style: solid;
+    border-radius: 100px;
+    border-color: rgb(255, 255, 255);
+    margin: 10px 10px;
+    background: rgb(7, 5, 5);
+    text-align: center;
+    padding: 1.5rem 2rem;
+    box-shadow: var(--shadow);
+}
+.boxA:hover {
+    color: red;
+    border-color: red;
+}
+
+.boxA a {     
+  display: inline-block;     
+  position: relative;    
+  z-index: 1;     
+  padding: 2em;     
+  margin: -2em; 
+}
+  section#Projects {
+    background:no-repeat center center/cover;;
+  }
+  
+  section#contact {
+    background: no-repeat center center/cover;;
+  }
+  
+  /* Boxes in the Projects section */
+.boxes {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: auto auto auto auto;
+}
+  
+.box {
+    border-style: solid;
+    border-radius: 100px;
+    border-color: rgb(255, 255, 255);
+    margin: 10px 10px;
+    background: rgb(7, 5, 5);
+    text-align: center;
+    padding: 1.5rem 2rem;
+    box-shadow: var(--shadow);
+}
+.box:hover {
+    color: red;
+    border-color: red;
+}
+
+.box a {     
+  display: inline-block;     
+  position: relative;    
+  z-index: 1;     
+  padding: 2em;     
+  margin: -2em; 
+}
+
+section#Projects img{
+    max-width: 50%;
+}
+
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    z-index: 1;
+    opacity: 0.92;
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 20px 8px 60px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+
+  /* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: relative;
+  top: 0;
+  right: -500px;
+  font-size: 36px;
+  margin-left: 100px;
+}
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+  }
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }  
+
+  /* contact form */
+
+ 
+.w {
+    border-style: solid;
+    border-color: lightblue;
+    position: relative;
+  }
+  
+  .contact-form{
+    color: rgb(0, 0, 0);
+    max-width: 100%;
+    margin: 0 auto;
+    background:rgba(0,0,0,0,0);
+    padding: 50px;
+    border-radius: 5px;
+    display: flex;
+    box-shadow: var(--shadow);
+  }
+  
+  .input-fields{
+    display: flex;
+    flex-direction: column;
+    margin-right: 4%;
+  }
+  
+  
+  .input-fields,
+  .msg{
+    width:48%;
+  }
+  
+  .input-fields .input,
+  .msg textarea {
+    margin: 10px 0;
+    background: transparent;
+    border: 0;
+    border-bottom: 2px solid lightblue;
+    padding: 5px;
+    color: white;
+    width: 100%;
+  }
+  
+  .msg textarea {
+    height: 212px;
+  }
+
+  /* Resume css */
